@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<title>Todo App</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="heading">
+				Todo App
+			</h1>
+			<div class="todo-container">
+				<ul id="list">
+					<li class="todo-list">
+						<label class="todo-label">
+							<input type="checkbox" onchange="strikeThrough(this);"/>
+							<span class="todo-content">Learn React Basics</span>
+						</label>
+					</li>
+					<li class="todo-list">
+						<label class="todo-label">
+							<input type="checkbox" onchange="strikeThrough(this);"/>
+							<span class="todo-content">Learn About Hooks</span>
+						</label>
+					</li>
+					<li class="todo-list">
+						<label class="todo-label">
+							<input type="checkbox" onchange="strikeThrough(this);"/>
+							<span class="todo-content">Shift from vanilla HTML CSS JS</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<form id="list-form" class="todo-add">
+				<input class="todo-add-input" type="text" placeholder="Add new item..." value=""></input>
+			</form>
+		</div>
+	</div>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
